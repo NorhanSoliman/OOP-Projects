@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Executable",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/path/to/your/executable.exe", // Adjust the path
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false // Ensure this is set to false
+        }
+    ]
+}

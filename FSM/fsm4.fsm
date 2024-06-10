@@ -1,0 +1,12 @@
+FSM fsm4
+VAR X, Y
+STATES:
+[A] PRINT(State A); X = *(X, 3); WAIT;
+[B] PRINT(State B); Y = +(Y, 2, 3); WAIT;
+[C] PRINT(Thank you for using fsm4); PRINT(X); PRINT(Y); END;
+[D] PRINT(Jumping to another FSM); JMP0(fsm3.fsm);
+TRANSITIONS:
+[1] A >> B
+[2] A >> C
+[3] A >> D
+[4] B >> A

@@ -1,0 +1,10 @@
+FSM fsm3
+VAR X
+STATES:
+[A] PRINT(State A); X = +(X, 1); WAIT;
+[B] PRINT(State B); X = +(X, 2); WAIT;
+[C] PRINT(End of fsm1); PRINT(X); END;
+TRANSITIONS:
+[1] A >> B
+[2] B >> A
+[3] B >> C
